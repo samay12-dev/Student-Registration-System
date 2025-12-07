@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header>
+        <div id="mainHeading">Student Registration System</div>
+        <div id="btn1"><button>Instructions</button></div>
+        <div id="instructions">
+            <pre>
+STUDENT REGISTRATION SYSTEM - INSTRUCTIONS:
+
+1. FILL OUT THE FORM
+   - Enter your full name in the "Name" field
+   - Enter a secure password in the "Password" field
+   - Enter your valid email address in the "Email" field
+   - Enter your Student ID in the "Student Id" field
+
+2. REGISTER
+   - Click the "Register" button to add your information to the records
+   - All fields must be completed before registration
+   - If a field is empty, an alert will notify you
+
+3. VIEW RECORDS
+   - Your registered information will appear in the table
+   - The table displays Name, Email, and Student ID
+   - Previously registered students are listed in the records section
+
+4. NOTES
+   - Ensure your email is in valid format
+   - Student ID should be your official university ID
+   - Data is stored in the table for your session
+            </pre>
+        </div>
+    </header>
+    <main>
+        <section class="section1">
+            <div class="formChanges">
+             <label for="name">Name</label>   
+            </div>
+            <div class="input1">
+                <input type="text" class="name" placeholder="Please Enter Your Name">
+            </div>
+
+             <div class="formChanges">
+             <label for="password">Password</label>   
+            </div>
+            <div class="input1">
+                <input type="password" class="password" placeholder="Please Enter Your password">
+            </div>
+             <div class="formChanges">
+             <label for="email">Email:</label>   
+            </div>
+            <div class="input1">
+                <input type="text" class="email" placeholder="Please Enter Your email">
+            </div>
+             <div class="formChanges">
+             <label for="studentId">Student Id</label>   
+            </div>
+            <div class="input1">
+                <input type="text" class="studentid" placeholder="Please Enter Your Student Id">
+            </div>
+            <button id="register">Register</button>
+        </section>
+        <section class="section2">
+           
+            <div class="records-table">
+                <table>
+                    <caption>Registered Students records</caption>
+                    <thead>
+                        <tr id="imp-heading">
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Student ID</th>
+                           
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                        <tr>
+                            <td>Sample Record</td>
+                            <td>sample@email.com</td>
+                            <td>12345</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul>  
+            <li>no-xxxx-xxxx</li>
+            <li>All Rights Reserved</li>
+            <li>Email:-xyz@gmail.com</li>
+        </ul>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
